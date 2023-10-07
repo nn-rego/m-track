@@ -1,2 +1,31 @@
-<h1>M-Track</h1>
-<p>Few click and you are good to go</p>
+<div class="container">
+  <header>
+    <div class="navbar">
+      <h1>Money Track</h1>
+      <ul class="links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Track</a></li>
+        <li><a href="/">Summary</a></li>
+        <li><a href="/">Contact</a></li>
+      </ul>
+      <a class="report-btn" href="/">Report</a>
+      <div class="toggle-menu" (click)="toggle_menu()">
+        <span class="material-symbols-sharp">
+          menu
+        </span>
+      </div>
+    </div>
+
+
+    <div [ngClass]="['menu-dropdown', showSideMenu ? 'menu-show' : '']">
+      <li><a href="/">Home</a></li>
+      <li><a href="/">Track</a></li>
+      <li><a href="/">Summary</a></li>
+      <li><a href="/">Contact</a></li>
+      <li class="toggle-btn">
+        <a class="report-btn" href="/">Report</a>
+      </li>
+    </div>
+  </header>
+  
+</div>

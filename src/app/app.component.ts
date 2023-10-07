@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'm-track';
+
+  showSideMenu: boolean = false;
+
+  constructor() {}
+
+  toggle_menu () {
+    this.showSideMenu = !this.showSideMenu;
+  }
 }
