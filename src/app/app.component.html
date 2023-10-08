@@ -3,10 +3,10 @@
     <div class="navbar">
       <h1>Money Track</h1>
       <ul class="links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Track</a></li>
-        <li><a href="/">Summary</a></li>
-        <li><a href="/">Contact</a></li>
+        <li><a [routerLink]="['']">Home1</a></li>
+        <li><a [routerLink]="['']">Track</a></li>
+        <li><a [routerLink]="['']">Summary</a></li>
+        <li><a [routerLink]="['']">Contact</a></li>
       </ul>
       <a class="report-btn" href="/">Report</a>
       <div class="toggle-menu" (click)="toggle_menu()">
@@ -19,15 +19,19 @@
 
     <div [ngClass]="['menu-dropdown', showSideMenu ? 'menu-show' : '']">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Track</a></li>
-        <li><a href="/">Summary</a></li>
-        <li><a href="/">Contact</a></li>
+        <li><a [routerLink]="['']">Home</a></li>
+        <li><a [routerLink]="['']">Track</a></li>
+        <li><a [routerLink]="['']">Summary</a></li>
+        <li><a [routerLink]="['']">Contact</a></li>
         <li class="toggle-btn">
           <a class="report-btn" href="/">Report</a>
         </li>
       </ul>
     </div>
   </header>
+
+  <section>
+    <router-outlet></router-outlet>
+  </section>
   
 </div>
