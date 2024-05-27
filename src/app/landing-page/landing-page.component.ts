@@ -8,6 +8,7 @@ import { LocalStorageName } from '../common/enum';
 })
 export class LandingPageComponent implements OnInit{
   displayMessage: any;
+  
   constructor() {}
 
   ngOnInit(): void {
@@ -23,5 +24,11 @@ export class LandingPageComponent implements OnInit{
       localStorage.getItem(LocalStorageName.M_TRACK_INFO);
       console.log("Just Created item")
     }
+
+    /* Indexd DB */
+
+
+    
+
   }
 }
